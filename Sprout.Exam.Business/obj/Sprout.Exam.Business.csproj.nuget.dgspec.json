@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Business\\Sprout.Exam.Business.csproj": {}
+    "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Business\\Sprout.Exam.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Business\\Sprout.Exam.Business.csproj": {
+    "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Business\\Sprout.Exam.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Business\\Sprout.Exam.Business.csproj",
+        "projectUniqueName": "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Business\\Sprout.Exam.Business.csproj",
         "projectName": "Sprout.Exam.Business",
-        "projectPath": "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Business\\Sprout.Exam.Business.csproj",
+        "projectPath": "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Business\\Sprout.Exam.Business.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Business\\obj\\",
+        "outputPath": "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj": {
-                "projectPath": "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj"
+              "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj": {
+                "projectPath": "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj"
               }
             }
           }
@@ -59,20 +59,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -82,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj": {
+    "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj",
+        "projectUniqueName": "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj",
         "projectName": "Sprout.Exam.Common",
-        "projectPath": "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj",
+        "projectPath": "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Common\\Sprout.Exam.Common.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Downloads\\Sprout.Exam.WebApp\\Sprout.Exam.WebApp\\Sprout.Exam.Common\\obj\\",
+        "outputPath": "C:\\Users\\user\\carding1968\\Sprout\\Sprout.Exam.WebApp\\SproutSolutions\\Sprout.Exam.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -133,20 +119,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -10,3 +10,17 @@ C:\Users\jhernandez\source\repos\Sprout.Exam.WebApp\Sprout.Exam.Business\obj\Deb
 C:\Users\jhernandez\source\repos\Sprout.Exam.WebApp\Sprout.Exam.Business\bin\Debug\netcoreapp3.1\Sprout.Exam.Common.dll
 C:\Users\jhernandez\source\repos\Sprout.Exam.WebApp\Sprout.Exam.Business\bin\Debug\netcoreapp3.1\Sprout.Exam.Common.pdb
 C:\Users\jhernandez\source\repos\Sprout.Exam.WebApp\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.csproj.CopyComplete
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\bin\Debug\netcoreapp3.1\Sprout.Exam.Business.deps.json
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\bin\Debug\netcoreapp3.1\Sprout.Exam.Business.dll
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\bin\Debug\netcoreapp3.1\Sprout.Exam.Business.pdb
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\bin\Debug\netcoreapp3.1\Sprout.Exam.Common.dll
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\bin\Debug\netcoreapp3.1\Sprout.Exam.Common.pdb
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.csproj.AssemblyReference.cache
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.AssemblyInfoInputs.cache
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.AssemblyInfo.cs
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.csproj.CoreCompileInputs.cache
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.sourcelink.json
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.E.EDC877D2.Up2Date
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.dll
+C:\Users\user\carding1968\Sprout\Sprout.Exam.WebApp\SproutSolutions\Sprout.Exam.Business\obj\Debug\netcoreapp3.1\Sprout.Exam.Business.pdb
