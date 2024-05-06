@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sprout.Exam.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6163c1a93daa0631bc7648ec5d59581344cff910")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6b3c65e5368da5c1005f8313e321e7f6c987a97")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sprout.Exam.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sprout.Exam.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
