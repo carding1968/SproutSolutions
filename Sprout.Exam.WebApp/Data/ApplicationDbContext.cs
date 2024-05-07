@@ -12,10 +12,13 @@ namespace Sprout.Exam.WebApp.Data
 {
     public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
     {
+        public DbSet<EmployeeTypes> EmployeeType { get; set; }
+        public DbSet<Employee> Employee { get; set; }
         public ApplicationDbContext(
             DbContextOptions options,
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
+
         }
     }
 }

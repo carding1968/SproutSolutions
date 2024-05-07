@@ -46,7 +46,7 @@ export class EmployeeEdit extends Component {
 </div>
 <div className='form-group col-md-6'>
   <label htmlFor='inputEmployeeType4'>Employee Type: *</label>
-  <select id='inputEmployeeType4' onChange={this.handleChange.bind(this)} value={this.state.typeId}  name="typeId" className='form-control'>
+    <select id='inputEmployeeType4' onChange={this.handleChange.bind(this)} value={this.state.employeeTypeId} name="employeeTypeId" className='form-control'>
     <option value='1'>Regular</option>
     <option value='2'>Contractual</option>
   </select>
@@ -94,6 +94,8 @@ export class EmployeeEdit extends Component {
       headers: !token ? {} : { 'Authorization': `Bearer ${token}` }
     });
     const data = await response.json();
-    this.setState({ id: data.id,fullName: data.fullName,birthdate: data.birthdate,tin: data.tin,typeId: data.typeId, loading: false,loadingSave: false });
+    
+
+    this.setState({ id: data.id, fullName: data.fullName, birthdate: data.birthdate, tin: data.tin, employeeTypeId: data.employeeTypeId, loading: false, loadingSave: false });
   }
 }

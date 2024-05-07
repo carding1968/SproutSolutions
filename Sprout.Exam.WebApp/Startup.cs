@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,7 +12,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Sprout.Exam.WebApp.Data;
+using Sprout.Exam.WebApp.Data.EmployeeService;
+using Sprout.Exam.WebApp.Mapping;
 using Sprout.Exam.WebApp.Models;
+using System;
 
 namespace Sprout.Exam.WebApp
 {
@@ -44,12 +48,18 @@ namespace Sprout.Exam.WebApp
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/build";
             });
+
+
+            //CustomServices
+            //services.AddAutoMapper(typeof(EmployeeMapper));
+            services.AddScoped<IEmployeeService, EmployeeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
