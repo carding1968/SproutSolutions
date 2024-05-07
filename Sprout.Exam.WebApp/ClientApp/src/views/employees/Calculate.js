@@ -104,8 +104,9 @@ export class EmployeeCalculate extends Component {
     };
     const response = await fetch('api/employees/' + this.state.id + '/calculate',requestOptions);
       const data = await response.json();
-      const res = data % 1 !== 0 ? data.toLocaleString(undefined, { fixedFractionDigits: 2 }) : data.toFixed(2);
-      
+      //console.log(data);
+      //const res = data % 1 !== 0 ? data.toLocaleString(undefined, { maxFractionDigits: 2 }) : data.toLocaleString("en", { minimumFractionDigits: 2 });
+      const res = data.toLocaleString("en", { minimumFractionDigits: 2 });
      
       this.setState({ loadingCalculate: false, netIncome: res });
   }
