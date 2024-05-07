@@ -10,6 +10,7 @@ using Sprout.Exam.Common.Enums;
 using AutoMapper;
 using Sprout.Exam.WebApp.Data.EmployeeService;
 using Sprout.Exam.WebApp.Models;
+using System.Runtime.CompilerServices;
 
 namespace Sprout.Exam.WebApp.Controllers
 {
@@ -90,6 +91,7 @@ namespace Sprout.Exam.WebApp.Controllers
             
            
 
+            
             return Created($"/api/employees/{output.Id}", output.Id);
             
 
@@ -136,24 +138,49 @@ namespace Sprout.Exam.WebApp.Controllers
         /// <param name="absentDays"></param>
         /// <param name="workedDays"></param>
         /// <returns></returns>
+        /// <returns></returns>
         [HttpPost("{id}/calculate")]
-        public async Task<IActionResult> Calculate(int id,decimal absentDays,decimal workedDays)
+        
+        public async Task<IActionResult> Calculate(CalculateSalaryDto input)
         {
-            var result = await Task.FromResult(StaticEmployees.ResultList.FirstOrDefault(m => m.Id == id));
+            //var result = await Task.FromResult(StaticEmployees.ResultList.FirstOrDefault(m => m.Id == id));
+            var result = await _employeeService.GetId(input.Id);
 
             if (result == null) return NotFound();
             var type = (EmployeeType) result.EmployeeTypeId;
+            
             return type switch
             {
                 EmployeeType.Regular =>
                     //create computation for regular.
-                    Ok(25000),
+                    //salary = basicSalary - (basicSalary / 22), //- (20000 * 0.12))
+
+                    Ok(ComputeRegular(input.AbsentDays)),
                 EmployeeType.Contractual =>
                     //create computation for contractual.
-                    Ok(20000),
+                    Ok(ComputeContractual(input.WorkedDays)),
                 _ => NotFound("Employee Type not found")
-            };
+            }; ;
 
+        }
+
+        public string ComputeRegular(decimal absent) {
+            decimal basicSalary = 20000;
+            //decimal dayRate = 500;
+            decimal salary = 0;
+            decimal absentComp = (basicSalary / 22) * absent;
+            decimal tax = Math.Truncate(basicSalary * (decimal)0.12);
+            salary = basicSalary - absentComp - tax;
+          
+            return salary.ToString("0.00");
+
+        }
+
+        public string ComputeContractual(decimal workedDays) {
+            decimal dayRate = 500;
+            decimal salary = dayRate * workedDays;
+
+            return salary.ToString("0.00");
         }
 
     }
