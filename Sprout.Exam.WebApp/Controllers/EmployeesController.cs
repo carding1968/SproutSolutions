@@ -152,36 +152,45 @@ namespace Sprout.Exam.WebApp.Controllers
             return type switch
             {
                 EmployeeType.Regular =>
-                    //create computation for regular.
-                    //salary = basicSalary - (basicSalary / 22), //- (20000 * 0.12))
-
-                    Ok(ComputeRegular(input.AbsentDays)),
+                    Ok(ComputeSalary(result.EmployeeTypeId, input.AbsentDays, input.WorkedDays)),
                 EmployeeType.Contractual =>
                     //create computation for contractual.
-                    Ok(ComputeContractual(input.WorkedDays)),
+                    Ok(ComputeSalary(result.EmployeeTypeId, input.AbsentDays, input.WorkedDays)),
                 _ => NotFound("Employee Type not found")
             }; ;
 
         }
 
-        public string ComputeRegular(decimal absent) {
-            decimal basicSalary = 20000;
-            //decimal dayRate = 500;
+        public string ComputeSalary(int employeeTypeId, decimal absent, decimal workedDays) {
             decimal salary = 0;
-            decimal absentComp = (basicSalary / 22) * absent;
-            decimal tax = Math.Truncate(basicSalary * (decimal)0.12);
-            salary = basicSalary - absentComp - tax;
-          
+
+            var type = (EmployeeType)employeeTypeId;
+
+            switch (type) {
+                case EmployeeType.Regular:
+                    decimal basicSalary = 20000;
+                    decimal absentComp = (basicSalary / 22) * absent;
+                    decimal tax = Math.Truncate(basicSalary * (decimal)0.12);
+                    salary = basicSalary - absentComp - tax;
+
+                    break;
+                case EmployeeType.Contractual:
+                    decimal dayRate = 500;
+                    salary = dayRate * workedDays;
+
+
+                    break;
+
+
+            }
+
+         
+            
             return salary.ToString("0.00");
 
         }
 
-        public string ComputeContractual(decimal workedDays) {
-            decimal dayRate = 500;
-            decimal salary = dayRate * workedDays;
-
-            return salary.ToString("0.00");
-        }
+       
 
     }
 }

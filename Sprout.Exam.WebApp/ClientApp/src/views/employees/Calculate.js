@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import authService from '../../components/api-authorization/AuthorizeService';
+import moment from 'moment';
 
 export class EmployeeCalculate extends Component {
   static displayName = EmployeeCalculate.name;
@@ -22,7 +23,7 @@ export class EmployeeCalculate extends Component {
   }
 
   render() {
-
+    moment.locale('en');
     let contents = this.state.loading
     ? <p><em>Loading...</em></p>
     : <div>
@@ -36,7 +37,7 @@ export class EmployeeCalculate extends Component {
 
 <div className='form-row'>
 <div className='form-group col-md-12'>
-  <label >Birthdate: <b>{this.state.birthdate}</b></label>
+  <label >Birthdate: <b>{moment(this.state.birthdate).format('YYYY-MM-DD')}</b></label>
 </div>
 </div>
 
@@ -64,11 +65,11 @@ export class EmployeeCalculate extends Component {
 {this.state.employeeTypeId === 1? 
 <div className='form-group col-md-6'>
   <label htmlFor='inputAbsentDays4'>Absent Days: </label>
-                            <input type='text' className='form-control' id='inputAbsentDays4' onChange={this.handleChange.bind(this)} name="absentDays" value={this.state.absentDays} placeholder='Absent Days' />
+                            <input type='number' className='form-control' id='inputAbsentDays4' onChange={this.handleChange.bind(this)} name="absentDays" value={this.state.absentDays} placeholder='Absent Days' />
 </div> :
 <div className='form-group col-md-6'>
   <label htmlFor='inputWorkDays4'>Worked Days: </label>
-                            <input type='text' className='form-control' id='inputWorkDays4' onChange={this.handleChange.bind(this)} name="workedDays" value={this.state.workedDays} placeholder='Worked Days' />
+                            <input type='number' className='form-control' id='inputWorkDays4' onChange={this.handleChange.bind(this)} name="workedDays" value={this.state.workedDays} placeholder='Worked Days' />
 </div>
 }
 </div>
@@ -104,8 +105,6 @@ export class EmployeeCalculate extends Component {
     };
     const response = await fetch('api/employees/' + this.state.id + '/calculate',requestOptions);
       const data = await response.json();
-      //console.log(data);
-      //const res = data % 1 !== 0 ? data.toLocaleString(undefined, { maxFractionDigits: 2 }) : data.toLocaleString("en", { minimumFractionDigits: 2 });
       const res = data.toLocaleString("en", { minimumFractionDigits: 2 });
      
       this.setState({ loadingCalculate: false, netIncome: res });

@@ -4,8 +4,10 @@ import authService from '../../components/api-authorization/AuthorizeService';
 export class EmployeeEdit extends Component {
   static displayName = EmployeeEdit.name;
 
-  constructor(props) {
-    super(props);
+    constructor(props) {
+
+     super(props);
+
     this.state = { id: 0,fullName: '',birthdate: '',tin: '',typeId: 1, loading: true,loadingSave:false };
   }
 
@@ -24,7 +26,8 @@ export class EmployeeEdit extends Component {
   }
 
   render() {
-
+      const date = new Date(this.state.birthdate);
+      const defaultValue = date.toLocaleDateString('en-CA');
     let contents = this.state.loading
     ? <p><em>Loading...</em></p>
     : <div>
@@ -36,7 +39,7 @@ export class EmployeeEdit extends Component {
 </div>
 <div className='form-group col-md-6'>
   <label htmlFor='inputBirthdate4'>Birthdate: *</label>
-  <input type='date' className='form-control' id='inputBirthdate4' onChange={this.handleChange.bind(this)} name="birthdate" value={this.state.birthdate} placeholder='Birthdate' />
+                        <input type='date' className='form-control' id='inputBirthdate4' onChange={this.handleChange.bind(this)} name="birthdate" defaultValue={defaultValue} placeholder='Birthdate' />
 </div>
 </div>
 <div className="form-row">
